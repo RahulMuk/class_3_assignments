@@ -15,6 +15,9 @@ It should print out in the console as
 - MTA Tax: $X
 
 ## Assignment 2 – Total change for S&P 500
+
 Goal: Get the total change for the S&P 500 in the past two weeks
+
 Write a loop that goes through the array and calculates a sum of the change
+
 Should print out in the console as **Total Change: X**
