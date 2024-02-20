@@ -6,6 +6,7 @@ Write a function that I can input the cost, and breaks down each tax amount:
 - New York State Tax (4%)
 - New York City Tax (4.5%)
 - MTA Tax (0.375%)
+
 It should print out in the console as
 - Total cost: $X
 - Total sales tax: $X
