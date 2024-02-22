@@ -14,10 +14,15 @@ It should print out in the console as
 - NYC Tax: $X
 - MTA Tax: $X
 
-## Assignment 2 – Total change for S&P 500
+## Assignment 2 – Split array by data type
 
-Goal: Get the change from the previous day 
+Goal: Sort data by its type and order it 
 
-Write a loop that goes through the array, calculates a sum of the change, and pushes it to a new array along with the date
+Sort the number and string arrays
+- Numbers by lowest to highest
+- Strings by alphabetical order
 
-Can just print in the console the array
+Console log all three arrays
+
+Things to remember
+- You’ll want to use the the reverse()/sort() or the toSorted()/toReversed() functions in javascript for the second part
