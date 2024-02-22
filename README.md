@@ -16,8 +16,8 @@ It should print out in the console as
 
 ## Assignment 2 – Total change for S&P 500
 
-Goal: Get the total change for the S&P 500 in the past two weeks
+Goal: Get the change from the previous day 
 
-Write a loop that goes through the array and calculates a sum of the change
+Write a loop that goes through the array, calculates a sum of the change, and pushes it to a new array along with the date
 
-Should print out in the console as **Total Change: X**
+Can just print in the console the array
