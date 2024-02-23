@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class 3 Javascript HW</title>
+</head>
+<body>
+
+
+<p>Get the total cost of an item that costs $78 + its tax.</p>
+
+<p>Write a function that I can input the cost, and breaks down each tax amount.</p>
+<ul>
+    <li>New York State Tax (4%)</li>
+    <li>New York City Tax (4.5%)</li>
+    <li>MTA Tax (0.375%)</li>
+</ul>
+
+<p>It should print out in the console as.</p>
+
+<ul>
+    <li>Total cost: $X</li>
+    <li>Total sales tax: $X</li>
+    <li>NYS Tax: $X</li>
+    <li>NYC Tax: $X</li>
+    <li>MTA Tax: $X</li>
+</ul>
+    
+<script>
+
+
+let NYC_Tax = .045;
+let NYS_Tax = .04;
+let MTA_Tax = .00375;
+
+// add all taxes to get total sales rate
+let nycSalesTaxRate = NYC_Tax + NYS_Tax + MTA_Tax;
+
+
+function calculateTotalPriceWithTax(itemPrice) {
+
+    //add sales tax, round down to two decimal points
+    let salesTax = (itemPrice * nycSalesTaxRate).toFixed(2);
+
+    // get taxes by cost, round down to two decimal points
+    let NYC_Tax_Cost = (itemPrice * NYC_Tax).toFixed(2);
+    let NYS_Tax_Cost = (itemPrice * NYS_Tax).toFixed(2);
+    let MTA_Tax_Cost = (itemPrice * MTA_Tax).toFixed(2);
+
+    // total cost with taxes, round down to two decimal points
+    let totalPriceWithTax = (itemPrice * (1 + nycSalesTaxRate)).toFixed(2);
+
+    // print results
+    console.log(`Total Cost: $${totalPriceWithTax}`);
+    console.log(`Total sales tax: $${salesTax}`);
+    console.log(`NYS Tax: $${NYS_Tax_Cost}`);
+    console.log(`NYC Tax: $${NYC_Tax_Cost}`);
+    console.log(`MTA Tax: $${MTA_Tax_Cost}`);
+
+}
+
+calculateTotalPriceWithTax(78);
+
+</script>
+
+</body>
+</html>

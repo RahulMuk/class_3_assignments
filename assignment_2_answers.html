@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class 3 Javascript HW</title>
+</head>
+<body>
+
+    <p>Split this array up based on the data type.</p>
+
+<p>Sort the array.</p>
+<ul>
+    <li>Numbers by lowest to highest</li>
+    <li>Strings by alphabetical order</li>
+</ul>
+
+<p>You’ll want to use the the <code>reverse()/sort()</code> or the <code>toSorted()/toReversed()</code> functions in javascript for the second part.</p>
+
+
+<script>
+
+let array = ["apple", true, 5, false, "banana", "orange", 15, "grape", true, 20, "kiwi", "pineapple", false, 25, "watermelon", true, 30, "cherry", false, "lemon"];
+
+let booleans = [];
+let strings = [];
+let numbers = [];
+
+
+array.forEach(function(item){
+    if (typeof item === 'boolean') {
+        booleans.push(item);
+    } else if (typeof item === 'string') {
+        strings.push(item);
+    } else if (typeof item === 'number') {
+        numbers.push(item);
+    }
+})
+
+// for (let item of array) {
+//     if (typeof item === 'boolean') {
+//         booleans.push(item);
+//     } else if (typeof item === 'string') {
+//         strings.push(item);
+//     } else if (typeof item === 'number') {
+//         numbers.push(item);
+//     }
+// }
+
+// strings.sort();
+// numbers.sort((a, b) => a - b);
+
+
+console.log(strings, numbers, booleans);
+
+
+</script>
+
+</body>
+</html>
